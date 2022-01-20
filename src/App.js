@@ -1,10 +1,19 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { connect } from "react-redux";
+import data from "./data/dogs";
 
-function App() {
+function App(props) {
+  const dogs = data;
+
   return (
     <div className="App">
-      Async Redux Project
+      <h1>Search for a Doggo</h1>
+
+      <form>
+        <input />
+        <button>Find</button>
+      </form>
     </div>
   );
 }
